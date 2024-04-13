@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>  
+        body {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('https://foolishdeveloper.com/wp-content/uploads/2024/01/image-113.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: backgroundAnimation 30s infinite linear;
+            height: 100vh;
+            margin: 0; 
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+
+        .form-box {
+            border: 2px solid purple; 
+            border-radius: 10px; 
+            padding: 80px 40px; 
+            width: 400px; 
+            margin: 0 auto; 
+            margin-top: 20vh; 
+            text-align: center; 
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        #submit-button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 12px; 
+        }
+
+        #submit-button:hover {
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <form id="submitform">
+            <h2>Login here</h2>
+            <label for="emailId">E-mail</label><br/>
+            <input type="text" placeholder="Enter the mail id" id="emailId"/><br/>
+            <label for="password">Password</label><br/>
+            <input type="password" placeholder="Enter the password" id="password"/><br/>
+            <button id="submit-button" type="submit">Log In</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
